@@ -36,7 +36,7 @@
           <?=$session->username?>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?=base_url()?>/logout">Cerrar sesió</a></li>
+            <li><a class="dropdown-item" href="<?=base_url()?>/logout">Cerrar sesión</a></li>
           </ul>
         </li>
       </ul>
