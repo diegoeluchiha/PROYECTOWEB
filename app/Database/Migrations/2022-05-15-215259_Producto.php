@@ -12,22 +12,21 @@ class Producto extends Migration
             'id'          => [
                 'type'           => 'int',
                 'constraint'     => 5,
-                'unsigned'       => true,//unsigned se usa para manejar solo valores positivos
                 'auto_increment' => true,
             ],
             'nombre'          => [
                 'type'           => 'varchar',
-                'constraint'     => '255',//unsigned se usa para manejar solo valores positivos
+                'constraint'     => '255',
                 
             ],
             'descripcion'          => [
                 'type'           => 'varchar',
-                'constraint'     => '255',//unsigned se usa para manejar solo valores positivos
+                'constraint'     => '255',
                 
             ],
             'cantidad'          => [
                 'type'           => 'int',
-                'constraint'     => 5,//unsigned se usa para manejar solo valores positivos
+                'constraint'     => 5,
                 
             ],
        

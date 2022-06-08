@@ -12,18 +12,17 @@ class DetalleProyecto extends Migration
             'id'          => [
                 'type'           => 'int',
                 'constraint'     => 5,
-                'unsigned'       => true,//unsigned se usa para manejar solo valores positivos
                 'auto_increment' => true,
             ],
             'id_proyecto'          => [
                 'type'           => 'int',
-                'constraint'     => 5,//unsigned se usa para manejar solo valores positivos
+                'constraint'     => 5,
                
             ]
             ,
             'id_producto'          => [
                 'type'           => 'int',
-                'constraint'     => 5,//unsigned se usa para manejar solo valores positivos
+                'constraint'     => 5,
                
             ]
        

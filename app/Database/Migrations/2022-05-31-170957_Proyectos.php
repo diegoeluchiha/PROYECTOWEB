@@ -12,18 +12,17 @@ class Proyectos extends Migration
             'id'          => [
                 'type'           => 'int',
                 'constraint'     => 5,
-                'unsigned'       => true,//unsigned se usa para manejar solo valores positivos
                 'auto_increment' => true,
             ],
             'nombre_proyecto'          => [
                 'type'           => 'varchar',
-                'constraint'     => '255',//unsigned se usa para manejar solo valores positivos
+                'constraint'     => '255',
                
             ],
           
             'descripcion'          => [
                 'type'           => 'varchar',
-                'constraint'     => '255',//unsigned se usa para manejar solo valores positivos
+                'constraint'     => '255',
             
             ],
             'fecha_inicio'      => [

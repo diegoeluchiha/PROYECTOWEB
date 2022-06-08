@@ -9,12 +9,12 @@
       <?=view('user/control/_session')?>
 				<form action="<?=base_url()?>/login_post" method="post">
 					<div class=" form-group">
-						<input type="text" id="email" name="email" class="form-control" placeholder="email">
+						<input type="text" id="email" name="email" class="form-control" placeholder="email" required>
 						
 					</div>
 					<div class="form-group mt-2">
 						
-						<input type="password"  id="password" name="password"  class="form-control" placeholder="password">
+						<input type="password"  id="password" name="password"  class="form-control" placeholder="password" required>
 					</div>
 					<div class="form-group text-center mt-2">
 						<input type="submit" value="Login" class="btn  btn-dark">
