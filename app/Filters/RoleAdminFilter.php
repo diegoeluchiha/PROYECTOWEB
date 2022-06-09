@@ -21,3 +21,5 @@ class RoleAdminFilter implements FilterInterface
         // Do something here
     }
 }
+
+// if ($session->type !="admin" && $session->type !="regular") //para el futuro asi definir y leugo limitar secciones de las vistas segun type de session.

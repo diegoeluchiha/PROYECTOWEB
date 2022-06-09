@@ -13,9 +13,9 @@ class EmailController extends BaseController
         //    // 'title2'=>'listado de bromas', //puedes pasar otro dato,ademas del primero
     
         //     ];
-        echo view('template_login/header');
+        echo view('template/header');
         echo view('email/contacto');
-        echo view('template_login/footer');
+        echo view('template/footer');
     }
     public function email()
     {
@@ -46,5 +46,7 @@ class EmailController extends BaseController
     $email->setMessage($datos['mensaje']);
 
     $email->send();
-    }
+        echo "mensaje enviado con exito";
+  
+    }  
 }

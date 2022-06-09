@@ -65,6 +65,7 @@ class Filters extends BaseConfig
      *
      * @var array
      */
+    // limita el acceso sin una sesion iniciada a las siguientes rutas.
     public $filters = [
         'RoleAdminFilter'=>[
             'before'=>[
@@ -75,7 +76,8 @@ class Filters extends BaseConfig
                 'guardar',
                 'borrar/*',
                 'editar/*',
-                'actualizar'
+                'actualizar',
+                'email/contacto'
 
             ]
         ]

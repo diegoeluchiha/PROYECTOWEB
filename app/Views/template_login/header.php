@@ -16,7 +16,7 @@
     <header class="p-3  bg-dark text-white ">
     <div class="container-fluid">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end">
-        <a href="<?=base_url()?>\email/contacto" class="nav-link px-2 text-white ">Contacto</a>
+
       
 
   
