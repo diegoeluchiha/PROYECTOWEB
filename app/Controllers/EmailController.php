@@ -8,12 +8,12 @@ class EmailController extends BaseController
 {
 
     public function index(){
-        // $dataHeader=[
-        //     'title'=>'Contacto'
+     $dataHeader=[
+            'title'=>'Contacto'
         //    // 'title2'=>'listado de bromas', //puedes pasar otro dato,ademas del primero
     
-        //     ];
-        echo view('template/header');
+            ];
+        echo view('template/header',$dataHeader);
         echo view('email/contacto');
         echo view('template/footer');
     }

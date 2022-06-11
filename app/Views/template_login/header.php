@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>/DataTables/datatables.min.css"/> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.12.1/datatables.min.css"/>
     <link rel="stylesheet" href="<?=base_url()?>\css\user.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   </head>
   <body>
           <!-- header -->

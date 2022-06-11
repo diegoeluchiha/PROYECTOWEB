@@ -1,9 +1,7 @@
 </div>
 <!-- footer -->
-<footer class="bg-dark mb-0">
-    <div class="text-center">
-      <span class="mb-3 mb-md-0 text-light  ">&copy; 2022 Company, Inc</span>
-    </div>
+<footer class="bg-dark mb-0 py-3 text-center">
+    <span class="mb-3 mb-md-0 text-light  ">&copy; 2022 Company,Inc </span>
 
   </footer>
   <!-- footer -->

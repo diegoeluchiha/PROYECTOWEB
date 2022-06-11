@@ -3,12 +3,11 @@
   <!-- formulario de contacto en html y css -->  
 
 
-    <div class="card text-center mt-5 w-50 mx-auto">  
-      <h1>Contacto</h1>    
-          <form  class="row g-3 needs-validation mx-3" action="<?=base_url()?>/email/enviar" method="post"  novalidate>       
+    <div class="card text-center mt-5 w-50 mx-auto">   
+          <form  class="row g-3 needs-validation mx-3 mt-3" action="<?=base_url()?>/email/enviar" method="post"  novalidate>       
 
               
-              <div class="mb-3">
+              <div class="mb-3 ">
                     <input type="email" class="form-control" name="email" id="email" required placeholder="Escribe tu Email">
                     <div class="invalid-feedback">
                         Ingrese un email valido.

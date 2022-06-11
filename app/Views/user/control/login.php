@@ -11,7 +11,7 @@
 					<div class="row-md-12">
 						<input type="text" id="email" name="email" class="form-control" placeholder="Nombre de usuario" required>
             <div class="invalid-feedback">
-           complete este campo
+           Complete el campo nombre de usuario.
           </div>
 
 					</div>
@@ -19,7 +19,7 @@
 					<div class="row-md-12">
 						<input type="password"  id="password" name="password"  class="form-control" placeholder="Contraseña" required>
             <div class="invalid-feedback">
-            complete este campo
+            Complete el campo contraseña.
             </div>
 
 					</div>
