@@ -10,7 +10,7 @@ class Cliente extends BaseController
         $user=new UserModel();
         $data=[
             'users'=>$user->asObject()
-            ->paginate(5),
+            ->paginate(10),
             'pager' => $user->pager
         ];
         $this->_loadDefaultView('Listado de usuarios',$data,'index');
@@ -39,7 +39,7 @@ class Cliente extends BaseController
                 'password' =>hashPassword($this->request->getPost('password')),
             ]);
             // $this->_upload();
-            return redirect()->to("/cliente/$id/edit")->with('message', 'Usuario creado con exito');
+            return redirect()->to("/cliente")->with('message', 'Usuario creado con exito');
         }
         return redirect()->back()->withInput();
         // else{

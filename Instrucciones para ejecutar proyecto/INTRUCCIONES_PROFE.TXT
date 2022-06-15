@@ -1,0 +1,9 @@
+buenas tardes profe 
+le señalaremos los pasos para ejecutarlo el proyecto
+ 1-descargar clone de github.
+ 2-renombrar carpeta del proyecto a "PROYECTOWEB".
+ 3-pegamos la carpeta dentro de htdocs de xampp.
+ 4-renombrar env a ".env".
+ 5-ejecutar en la raiz del proyecto el comando "composer install".
+ 6-crear base de datos "base2" y ejecutar las migraciones.
+ 7-exportar base de datos users con usuarios dentro de la carpeta.
