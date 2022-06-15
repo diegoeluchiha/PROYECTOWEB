@@ -55,4 +55,4 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
 
-para utilizar el usuario admin debe ingresar la clave 12345
+para utilizar el usuario admin jhon la clave es 11111
