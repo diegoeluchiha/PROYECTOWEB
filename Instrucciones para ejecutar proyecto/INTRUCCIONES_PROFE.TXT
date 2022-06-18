@@ -8,4 +8,4 @@ le señalaremos los pasos para ejecutarlo el proyecto
  6-crear base de datos "base2" y ejecutar las migraciones.
  7-exportar base de datos users con usuarios dentro de la carpeta.
  usuario admin es jhon
- contraseña=11111
+ contraseña=12345
