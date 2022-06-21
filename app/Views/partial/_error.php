@@ -1,4 +1,4 @@
   <!-- errores inicio -->
-  <?= $validation->listErrors() ?>
+  <!-- <?= $validation->listErrors() ?> -->
 
 <!-- errores fin-->

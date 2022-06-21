@@ -4,8 +4,8 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Email</th>
-            <th>Usuario</th>
+            <th>EMAIL</th>
+            <th>USUARIO</th>
             <th>OPCIONES</th>
         </tr>
     </thead>

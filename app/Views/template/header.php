@@ -36,7 +36,8 @@
           <?=$session->username?>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a href="<?=base_url()?>\email/contacto" class="dropdown-item ">Contacto</a></li> 
+          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Perfil</a></li> 
+          <li><a href="<?=base_url()?>\email/contacto" class="dropdown-item ">Contacto</a></li>
             <li><a class="dropdown-item" href="<?=base_url()?>/logout">Cerrar sesión</a></li>
           </ul>
         </li>
@@ -47,7 +48,7 @@
     <!-- dorwdawn -->
 
 
-    
+    <!-- href="<?=base_url()?>\perfil"  -->
 
     
   </header>
@@ -59,4 +60,47 @@
     </div>
      <h1 class="text-center mt-3 mb-3"><?=$title ?></h1>
 
-    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary ">
+        <h5 class="modal-title mx-auto" id="exampleModalLabel">Perfil</h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body text-center">
+      <!-- perfil -->
+      <?php
+
+      $session = session();
+        ?>
+
+        <div class=" mx-auto" style="width: 18rem;">
+
+          <form>
+          <div class="mb-3 ">
+            <label for="username" class="form-label">Nombre de usuario</label>
+            <input type="username" class="form-control text-center" id="username" aria-describedby="username" value="<?=$session->username?>" disabled> 
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control text-center" id="email" value=" <?=$session->email?>" disabled>
+          </div>
+
+          <div class="mb-3">
+            <label for="type" class="form-label">Rol</label>
+            <input type="text" class="form-control text-center" id="type" value="<?=$session->type?>" disabled>
+          </div>
+        </form>
+
+
+        </div>
+      <!-- fin perfil -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>  
+

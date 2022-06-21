@@ -19,8 +19,8 @@ class User extends BaseController
 
         $user=$userModel->select('id,username,email,password,type')->orwhere('username', $email_username)->orwhere('email', $email_username)->first();
         
-        if (!$user) {
-            return redirect()->to('/login')->with('message', 'Usuario y/o contaseña incorrectos.');
+        if (!$user ) {
+            return redirect()->back()->withInput()->with('message', 'Usuario y/o contraseña incorrectos.');
             return;
         }
         if (verifyPassword($password,$user['password'])) {
@@ -30,7 +30,8 @@ class User extends BaseController
             return $this->_redirectAuth();
            
         }
-        return redirect()->to('/login')->with('message', 'Usuario y/o contaseña incorrectos.');
+        return redirect()->back()->withInput()->with('message', 'Usuario y/o contraseña incorrectos.');
+        // return redirect()->to('/login')->with('message', 'Usuario y/o contaseña incorrectos.');
     }
 
     public function logout(){

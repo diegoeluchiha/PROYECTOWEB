@@ -17,7 +17,14 @@
   <!-- <script  type="text/json" src="https://cdn.datatables.net/plug-ins/1.12.0/i18n/es-CL.json"></script> -->
   <script  type="text/javascript" src="<?=base_url()?>/js/man.js"></script> 
 
+<!-- <script>
+  const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script> -->
  
 
  

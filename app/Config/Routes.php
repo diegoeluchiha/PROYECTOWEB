@@ -50,6 +50,7 @@ $routes->get('/logout', 'web/User::logout');
 //email libreria
 $routes->get('/email/contacto', 'EmailController::index');
 $routes->post('/email/enviar', 'EmailController::email');
+// $routes->get('/perfil', 'Perfilcontroller::index');
 
 
 

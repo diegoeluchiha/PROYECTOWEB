@@ -1,6 +1,11 @@
-<div class="card w-75 mx-auto mt-5 ">
-  <div class="card-body text-center mx-auto">
 
+<div class="card text-center w-50 mx-auto mb-5">
+  <div class="card-header bg-dark text-white">
+    Datos
+  </div>
+  <div class="card-body">
+
+<!-- inicio formulario -->
   <form action="<?=base_url()?>/actualizar" method="post">
   <input type="hidden" name="id" value="<?=$informacion['id'] ?>">
   <div class="mb-3">
@@ -18,7 +23,13 @@
   
   <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
+<!-- fin formulario -->
 
-  
+
+</div>
+  <div class="card-footer text-muted bg-dark py-3">
+    <!-- 2 days ago -->
   </div>
 </div>
+
+  

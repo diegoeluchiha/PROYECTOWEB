@@ -1,35 +1,43 @@
 
   <!--  -->
-  <div class="d-flex justify-content-center h-100">
-		<div class="card mt-5 ">
-			<div class="card-header bg-dark">
+		<div class="card mt-5 w-50 mx-auto">
+			<div class="card-header bg-dark ">
 				<h3 class="text-center text-white">Iniciar sesión</h3>
 			</div>
 			<div class="card-body">
       <?=view('user/control/_session')?>
-				<form class="row g-3 needs-validation" action="<?=base_url()?>/login_post" method="post" novalidate>
-					<div class="row-md-12">
-						<input type="text" id="email" name="email" class="form-control" placeholder="Nombre de usuario" required>
+				<form class="row g-3 needs-validation " action="<?=base_url()?>/login_post" method="post" novalidate>
+				
+        <div class="col-md-6 input-group">
+						<input type="text" id="email" name="email" class="form-control py-2" placeholder="Nombre de usuario" value="<?= old('email') ?>" required>
             <div class="invalid-feedback">
            Complete el campo nombre de usuario.
           </div>
-
-					</div>
-
-					<div class="row-md-12">
-						<input type="password"  id="password" name="password"  class="form-control" placeholder="Contraseña" required>
-            <div class="invalid-feedback">
+          </div>
+         
+        
+          <div class="col-md-6 input-group">
+          <!-- <span class="input-group-text"> -->
+        
+						<input type="password"  id="password" name="password"  class="form-control py-2" placeholder="Contraseña" required>
+            <span class="input-group-text"> 
+            <button class="btn btn-dark btn-sm" type="button" onclick="mostrarContrasena()"><i class="bi bi-eye"></i></button>
+             </span>
+             <div class="invalid-feedback">
             Complete el campo contraseña.
             </div>
 
-					</div>
-					<div class="form-group text-center mt-2">
+            </div>
+
+
+        
+
+					<div class="text-center mt-2">
 						<input type="submit" value="Login" class="btn  btn-dark">
 					</div>
 				</form>
 			</div>
 		</div>
-	</div>
 
   <!-- <style>
     .card{
@@ -85,3 +93,16 @@ h3 {
   })
 })()
  </script>
+
+
+<!-- mostrar contraseña -->
+<script>
+  function mostrarContrasena(){
+      var tipo = document.getElementById("password");
+      if(tipo.type == "password"){
+          tipo.type = "text";
+      }else{
+          tipo.type = "password";
+      }
+  }
+</script>
