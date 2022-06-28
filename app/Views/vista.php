@@ -36,9 +36,9 @@
 
 <!-- modal eliminar -->
 <div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog ">
     <div class="modal-content">
-      <div class="modal-header bg-dark text-light ">
+      <div class="modal-header bg-secondary text-light ">
         <h5 class="modal-title mx-auto">Mensaje</h5>
         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
       </div>

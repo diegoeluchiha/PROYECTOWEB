@@ -36,9 +36,9 @@
           <?=$session->username?>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Perfil</a></li> 
-          <li><a href="<?=base_url()?>\email/contacto" class="dropdown-item ">Contacto</a></li>
-            <li><a class="dropdown-item" href="<?=base_url()?>/logout">Cerrar sesión</a></li>
+          <li><a class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Perfil</a></li> 
+          <li><a  class="dropdown-item btn"  data-bs-id="" data-bs-toggle="modal" data-bs-target="#ContactoModal">Contacto</a></li>
+            <li><a class="dropdown-item btn" href="<?=base_url()?>/logout">Cerrar sesión</a></li>
           </ul>
         </li>
       </ul>
@@ -60,7 +60,7 @@
     </div>
      <h1 class="text-center mt-3 mb-3"><?=$title ?></h1>
 
-<!-- Modal -->
+<!-- Modal perfil inicio -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog ">
     <div class="modal-content">
@@ -103,4 +103,83 @@
     </div>
   </div>
 </div>  
+<!-- modal perfil fin -->
 
+
+<!-- modal contacto inicio-->
+<div class="modal fade" id="ContactoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary text-light ">
+        <h5 class="modal-title mx-auto">Mensaje</h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body text-center">
+      <form  class="row g-3 needs-validation mx-3 mt-3" action="<?=base_url()?>/email/enviar" method="post"  novalidate>       
+
+              
+<div class="mb-3 ">
+      <input type="email" class="form-control" name="email" id="email" required placeholder="Escribe tu Email">
+      <div class="invalid-feedback">
+          Ingrese un email valido.
+      </div>
+  </div>
+
+  
+  <div class="mb-3">
+      <input type="text" class="form-control" name="asunto" id="assunto" required placeholder="Escribe un asunto">
+      <div class="invalid-feedback">
+          Ingrese el asunto.
+      </div>
+  </div>
+
+  <div class="form-floating">
+      <textarea class="form-control" name="mensaje"   required></textarea>
+      <label for="floatingTextarea">Mensaje</label>
+
+      <div class="invalid-feedback">
+          Ingrese el mensaje.
+      </div>
+  </div>
+
+  <button type="submit" class="btn btn-dark mt-3 mb-3  " ><p>Enviar</p></button>
+
+
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        
+        <!-- <a id="deleteform" data-bs-action="<?=base_url()?>/borrar/" href="" type="button" class="btn btn-danger">Eliminar</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal contacto fin -->
+
+
+
+
+<!-- valicaicon contacto -->
+
+<script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>

@@ -46,7 +46,7 @@ class EmailController extends BaseController
     $email->setMessage($datos['mensaje']);
 
     $email->send();
-        echo "mensaje enviado con exito";
+    return redirect()->to("/cliente")->with('message','correo enviado con exito.');
   
     }  
 }
