@@ -30,8 +30,8 @@ class EmailController extends BaseController
         $config['protocol'] = 'smtp';
         $config['SMTPHost'] =  'smtp.mailtrap.io';
         $config['SMTPPort']  = 2525;
-        $config['SMTPUser'] = 'd7e106815799e5';
-        $config['SMTPPass'] =  '077bc9a5bfb011';
+        $config['SMTPUser'] = '878f160823cedd';
+        $config['SMTPPass'] =  '9baa93af1fb47a';
         $config['CRLF'] =  "\r\n";
         $config['newline'] = "\r\n";
 

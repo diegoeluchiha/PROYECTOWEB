@@ -24,7 +24,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="<?=base_url()?>\" class="nav-link px-2 text-white">Productos</a></li>
           <li><a href="<?=base_url()?>/cliente" class="nav-link px-2 text-white">Administrar usuarios</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Proyectos</a></li>
+          <li><a href="<?=base_url()?>/proyecto"  class="nav-link px-2 text-white">Proyectos</a></li>
           <!-- <li><a href="#" class="nav-link px-2 text-white"></a></li> -->
         </ul>
         <ul class="navbar-nav">
@@ -112,7 +112,7 @@
     <div class="modal-content">
       <div class="modal-header bg-secondary text-light ">
         <h5 class="modal-title mx-auto">Mensaje</h5>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
       <form  class="row g-3 needs-validation mx-3 mt-3" action="<?=base_url()?>/email/enviar" method="post"  novalidate>       
@@ -148,7 +148,7 @@
 </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button> -->
         
         <!-- <a id="deleteform" data-bs-action="<?=base_url()?>/borrar/" href="" type="button" class="btn btn-danger">Eliminar</a> -->
       </div>

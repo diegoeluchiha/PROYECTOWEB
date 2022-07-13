@@ -39,6 +39,15 @@ $routes->get('/borrar/(:num)', 'CrudController::borrar/$1');
 $routes->get('/editar/(:num)', 'CrudController::editar/$1');
 $routes->post('/actualizar', 'CrudController::actualizar');
 
+
+// proyectos crud
+$routes->get('/proyecto', 'crud_proyecto_controller::index');
+$routes->post('/guardar/proyecto', 'crud_proyecto_controller::guardar');
+$routes->get('/crear/proyecto', 'crud_proyecto_controller::crear');
+$routes->get('/borrar/proyecto(:num)', 'crud_proyecto_controller::borrar/$1');
+$routes->get('/editar/proyecto/(:num)', 'crud_proyecto_controller::editar/$1');
+$routes->post('/actualizar/proyecto', 'crud_proyecto_controller::actualizar');
+
 // login
 $routes->resource('cliente',['except'=>['show']]);
 $routes->get('/login', 'web/User::login');
@@ -51,6 +60,10 @@ $routes->get('/logout', 'web/User::logout');
 $routes->get('/email/contacto', 'EmailController::index');
 $routes->post('/email/enviar', 'EmailController::email');
 // $routes->get('/perfil', 'Perfilcontroller::index');
+
+// ejemplo de query builder
+// $routes->get('/proyecto', 'ProyectoController::index');
+// $routes->get('/proyecto/prueba', 'ProyectoController::prueba');
 
 
 
