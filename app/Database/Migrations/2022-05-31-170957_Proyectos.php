@@ -25,14 +25,18 @@ class Proyectos extends Migration
                 'constraint'     => '255',
             
             ],
+            'cantidad_producto'          => [
+                'type'           => 'int',
+                'constraint'     => 5,
+            
+            ],
+
             'fecha_inicio'      => [
                 'type'           => 'datetime',
                 'constraint'     =>6,
              
             ],
             'fecha_fin'      => [
-
-
                 'type'           => 'datetime',
                 'constraint'     => 6,
          
@@ -42,6 +46,7 @@ class Proyectos extends Migration
        
         ]);
         $this->forge->addKey('id', true);//este define la priamry key es decir la clave principal de mi tabla
+        // $this->forge->addForeignKey('cantidad_producto', 'detalle_proyecto', 'cantidad_producto_proyecto');
         $this->forge->createTable('proyectos');
     }
 
